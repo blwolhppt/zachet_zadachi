@@ -11,13 +11,10 @@ public class task2 {
         Scanner scanner = new Scanner(System.in);
         String stroka = scanner.nextLine();
 
-
         Pattern pattern = Pattern.compile("\\d+");
 
-        // Создаем объект Matcher
         Matcher matcher = pattern.matcher(stroka);
 
-        // Ищем совпадения и выводим найденные числа
         while (matcher.find()) {
             String number = matcher.group();
             myArray.add(number);
